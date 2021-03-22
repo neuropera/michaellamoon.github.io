@@ -1,39 +1,59 @@
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-.clearfix:after {
-     visibility: hidden;
-     display: block;
-     font-size: 0;
-     content: " ";
-     clear: both;
-     height: 0;
-     }
-.clearfix { display: inline-block; }
-/* start commented backslash hack \*/
-* html .clearfix { height: 1%; }
-.clearfix { display: block; }
-/* close commented backslash hack */
+@import url('https://fonts.googleapis.com/css2?family=Kavivanar&display=swap');
 
-button {
-  position: relative;
+body {
+  font-family: 'Kavivanar', cursive;
+  background-color: #F3EDE2;
+  background-attachment: scroll;
+  background-position: right top;
+}
+
+.color-box {
+  float:center;
+  background-color:#B8A27A;
+  width:80%;
+  height:650px;
+
+  margin-top: 9%;
+  margin-left: 10%;
+}
+
+.buttonP {
+  position: center;
   display: block;
-  width: 400px;
-  height: 40px;
+  width: 250px;
+  height: 90px;
   margin: 40px auto 10px;
+
+  font-family: 'Kavivanar', cursive;
+  border-radius: 30px;
+  background-color: #F3EDE2;
+  border: none;
+  text-align: center;
+  color: #B8A27A;
+  font-size: 2.5vw;
+
+  cursor: pointer;
+}
+.buttonP:hover {
+background: #B8A27A;
+color: #F3EDE2;
+border: 2px solid #F3EDE2;
+}
+.buttonP:hover span {
+  display:none
+}
+.buttonP:hover:before {
+  content:"ROLLING...";
 }
 
 p {
   text-align: center;
-}
+  font-size: 1.5vw;
+  color: #F3EDE2;
 
-.yahtzee-board {
-  position: relative;
-  width: 710px;
-  height: 250px;
-  margin: 0 auto;
+  margin:0;
+  padding:0;
 }
-
 
 
 .cube .front  { transform: translateZ(50px); }
@@ -43,24 +63,26 @@ p {
 .cube .top    { transform: rotateX(90deg) translateZ(50px); }
 .cube .bottom { transform: rotateX(-90deg) translateZ(50px); }
 
-.container {
-  float: left;
-  margin: 20px;
+.diceContain {
+  float: center;
+  margin-top: 100px;
+  margin-left:47%;
+
 
   width: 100px;
   height: 100px;
-  position: relative;
 
 
   perspective: 1000px;
   perspective-origin: 50% 100%;
+
+    color: #F3EDE2;
 }
 
 .cube {
   width: 100%;
   height: 100%;
-  top: 50%;
-  position: absolute;
+  position: center;
 
   transform-style: preserve-3d;
   /*transform: rotateX(270deg) rotateY(1710deg);*/
@@ -73,12 +95,10 @@ p {
 }
 
 .cube div {
-  background: hsla(0, 85%, 50%, 0.85);
   display: block;
   position: absolute;
   width: 100%;
   height: 50%;
-  border: 1% solid #ab1a1a;
 
   margin: 0 auto;
 
@@ -89,7 +109,6 @@ p {
 }
 
 .cube.held div {
-  background: hsla(240, 85%, 50%, 0.75);
   border: 1% solid #1a1aab;
 }
 
@@ -98,10 +117,9 @@ p {
   position: absolute;
   width: 15%;
   height: 15%;
-  background: black
-    ;
+  background: #B8A27A;
+
   border-radius: 50%;
-  box-shadow: inset 2px 2px 4px rgba(0,0,0, 0.2);
 }
 
 .front .dot1 { top: 42.5%; left: 42.5%; }
@@ -127,15 +145,6 @@ p {
 .bottom .dot6 { top: 62.5%; left: 62.5%; }
 
 
-input.MyCheckbox {
-width: 100px;
-height: 100px;
-transform: translate(-4%, -28%);
-cursor: pointer;
-font-size: 10%;
-background: #3366cc;
-color: #fff;
-}
 
 input.MyButton {
 width: 100px;
@@ -143,8 +152,11 @@ height: 100px;
 transform: translate(0%, -25%);
 cursor: pointer;
 font-size: 10%;
-background: red;
+background-color: #F3EDE2;
+  border-radius: 20px;
+  border: 1px solid #F3EDE2;
+
 }
 input.MyButton:hover {
-background: blue;
+background: #9FCACE;
 }

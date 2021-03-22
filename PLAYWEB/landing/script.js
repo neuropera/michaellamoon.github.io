@@ -76,10 +76,10 @@ $('#roll').click(function(){
     roll($(this));
   });
   turns--;
-  
+
   $('#turns').text(turns);
-  
- 
+
+
 });
 
 function roll(dice) {
@@ -98,11 +98,20 @@ function roll(dice) {
 
   var xPos = positions[rand][spins].x + 1800;
   var yPos = positions[rand][spins].y + 1800;
-  
+
   dice.css('transform', 'rotateX('+xPos+'deg) rotateY('+yPos+'deg)');
   dice.css('-webkit-transform', 'rotateX('+xPos+'deg) rotateY('+yPos+'deg)');
 }
 
 function getRandom(max, min) {
   return Math.floor(Math.random() * (max-min)) + min;
+}
+
+function hideP() {
+  var x = document.getElementById("myP");
+  if (x.style.display === "none") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "none";
+  }
 }
