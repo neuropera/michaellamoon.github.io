@@ -114,4 +114,6 @@ function hideP() {
   } else {
     x.style.display = "none";
   }
+
+  document.getElementById("replace").style.color = "#F3EDE2";
 }
