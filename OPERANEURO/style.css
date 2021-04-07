@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@900&family=New+Tegomin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
+body
+{
+  background-color: #fcfcfc;  
+}
+aside{
+  width: 30%;
+  padding-left: 15px;
+  margin-left: 15px;
+  float: right;
+  font-style: italic;
+  text-align: right;
+
+  background-color: lightgray;
+}
+
+.mainh1{
+    font-family: 'Cinzel', serif;
+    font-size: 3.5vw;
+    text-align: center;
+    letter-spacing: 20px;
+}
+.mainp{
+    font-family: 'New Tegomin', serif;
+    display: inline-block;
+    text-align: center;
+}
+
+.brainsection{
+ margin: auto;
+ padding-left:8%;
+}
+a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:hover {
+    color: green;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+  /*--------------------countdown-----------------------------*/
+
+.counterbody {
+  align-items: center;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.countercontainer {
+  color: #333;
+  text-align: center;
+  float:center;
+    background-color:#e6df7b;
+    width:100%;
+    height:60px;
+  
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.counterh1 {
+  font-weight: normal;
+  font-size: 2vh;
+  text-transform: uppercase;
+
+  margin-top: -3vw;
+  margin-left: 1vw;
+  padding-bottom: 0;
+}
+
+li {
+  display: inline-block;
+  font-size: 1vw;
+  list-style-type: none;
+  text-transform: uppercase;
+
+  margin-left: 2vw; /*spacing btn counters*/
+}
+
+li span {
+
+  font-size: 2vw;
+
+}
+
+.ctain{
+  font-family: 'Source Sans Pro', sans-serif;
+
+  margin-top: -4vw;
+  margin-left: 30vw;
+}
+
