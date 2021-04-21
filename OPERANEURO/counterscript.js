@@ -4,7 +4,7 @@
         hour = minute * 60,
         day = hour * 24;
 
-  let dday = "April 17, 2021 20:00:00",
+  let dday = "April 22, 2021 20:00:00",
       countDown = new Date(dday).getTime(),
       x = setInterval(function() {    
 

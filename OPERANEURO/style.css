@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@900&family=New+Tegomin&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
 
+@import url('https://use.typekit.net/izy0ffp.css');
+
+
 body
 {
   background-color: #fcfcfc;  
@@ -17,11 +20,14 @@ aside{
 }
 
 .mainh1{
-    font-family: 'Cinzel', serif;
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 900;
+    font-style: normal;
     font-size: 3.5vw;
     text-align: center;
     letter-spacing: 20px;
 }
+.blue { color: #6F6B82; }
 .mainp{
     font-family: 'New Tegomin', serif;
     display: inline-block;
