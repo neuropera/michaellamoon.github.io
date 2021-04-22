@@ -34,9 +34,8 @@ aside{
     text-align: center;
 }
 
-.brainsection{
- margin: auto;
- padding-left:8%;
+.brainsection{	
+  padding-left:8%;
 }
 a:link {
     color: black;
