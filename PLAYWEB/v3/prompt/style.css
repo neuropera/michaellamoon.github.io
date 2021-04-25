@@ -12,6 +12,12 @@ body {
 
   margin-left: 10%;
 }
+.p:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
 img {
   width: 30%;
   height: auto;

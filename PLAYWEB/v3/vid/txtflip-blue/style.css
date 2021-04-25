@@ -12,12 +12,6 @@ body {
 
   margin-left: 10%;
 }
-.p:hover {
-  color: red;
-  background-color: transparent;
-  text-decoration: underline;
-}
-
 img {
   width: 30%;
   height: auto;
@@ -26,6 +20,15 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+
+.countdown{
+  color:#595959;
+  font-size:1.5vw;
+  text-align:right;
+
+  margin-right: 3vw;
+}
+
 .color-box {
   background-color:#B8A27A;
   position: relative;
@@ -45,6 +48,24 @@ img {
   transform: translate(-50%, -50%);
 
   color: #F3EDE2;
+}
+.prompt {
+  margin: 0;
+  position: absolute;
+  color:#F3EDE2;
+  font-size: 2.5vw;
+  font-weight: normal;
+
+  margin-top: 3vw;
+  margin-left: 7vw;
+}
+.comment {
+  float: left;
+  width: 50%;
+  height: auto;
+
+  resize: none;
+  color:black;
 }
 
 .buttonP {
@@ -69,7 +90,16 @@ color: #F3EDE2;
 border: 2px solid #F3EDE2;
 }
 
+.skip{
+  margin-top: 3vw;
+  margin-left: 30vw;
+  font-size: .7vw;
 
+  cursor: pointer;
+}
+.skip:hover{
+  color: #595959;
+}
 
 /*---------------footer--------------------*/
     .footer {
