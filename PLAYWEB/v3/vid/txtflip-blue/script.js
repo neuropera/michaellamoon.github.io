@@ -1,25 +1,39 @@
-document.getElementById('timer').innerHTML =
-  000 + ":" + 20;
-startTimer();
+var $win = $(window),
+    w = 0,
+    h = 0,
+    rgb = [],
 
-function startTimer() {
-  var presentTime = document.getElementById('timer').innerHTML;
-  var timeArray = presentTime.split(/[:]+/);
-  var m = timeArray[0];
-  var s = checkSecond((timeArray[1] - 1));
-  if(s==59){m=m-1}
-  if(m<0){
-      document.getElementById("timerReset").innerHTML = "Time's up! Please click Submit";
-  }
+    getWidth = function () {
+        w = $win.width();
+        h = $win.height();
+    };
 
-  document.getElementById('timer').innerHTML =
-    m + ":" + s;
-  console.log(m)
-  setTimeout(startTimer, 1000);
-}
+var timeout = null;
 
-function checkSecond(sec) {
-  if (sec < 10 && sec >= 0) {sec = "0" + sec}; // add zero in front of numbers < 10
-  if (sec < 0) {sec = "59"};
-  return sec;
-}
+$win.ready(getWidth).mousemove(function (e) {
+
+    rgb = [
+    Math.round(e.pageX / w * 200),
+    Math.round(e.pageY / h * 200),
+    0];
+
+    if (timeout !== null) {
+        $('.txt').css('color', 'rgb(' + rgb.join(',') + ')');
+        clearTimeout(timeout);
+    }
+
+    timeout = setTimeout(function () {
+        $('.circle').animate({backgroundColor: "#221f1f"}, "fast");
+    }, 1000);
+
+}).ready();
+
+
+var arrow = $('#arrow');
+var arrowX = arrow.offset().left + arrow.outerWidth(true) / 2;
+var arrowY = arrow.offset().top + arrow.outerHeight(true) / 2;
+
+$(document).on('mousemove', function(event) {
+  var rad = Math.atan2(event.pageY - arrowY, event.pageX - arrowX);
+  arrow.css('transform', 'skewY('+rad+ 'rad)');
+});

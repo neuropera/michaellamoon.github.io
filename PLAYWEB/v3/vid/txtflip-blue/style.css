@@ -10,23 +10,7 @@ body {
   font-family: 'Kavivanar', cursive;
   color: #B8A27A;
 
-  margin-left: 10%;
-}
-img {
-  width: 30%;
-  height: auto;
-
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.countdown{
-  color:#595959;
-  font-size:1.5vw;
-  text-align:right;
-
-  margin-right: 3vw;
+  margin-left: 10vw;
 }
 
 .color-box {
@@ -49,57 +33,27 @@ img {
 
   color: #F3EDE2;
 }
-.prompt {
+
+/*---------------text--------------------*/
+.container {
+  overflow: hidden;
+  background: transparent;
+  cursor: ew-resize;
+  white-space: nowrap;
+  padding: 6vw 0;
+
+  margin-top: -50vh;
+}
+
+.title {
+  font: bold normal 6vw/1.2 'Kavivanar', cursive;
+  position: relative;
+  color: #000;
+  display: inline-block;
   margin: 0;
-  position: absolute;
-  color:#F3EDE2;
-  font-size: 2.5vw;
-  font-weight: normal;
-
-  margin-top: 3vw;
-  margin-left: 7vw;
-}
-.comment {
-  float: left;
-  width: 50%;
-  height: auto;
-
-  resize: none;
-  color:black;
+  will-change: transform;
 }
 
-.buttonP {
-  position: center;
-  display: block;
-  width: 10vw;
-  height: 4vw;
-
-  font-family: 'Kavivanar', cursive;
-  border-radius: 20px;
-  background-color: #F3EDE2;
-  border: none;
-  text-align: center;
-  color: #B8A27A;
-  font-size: 1.5vw;
-
-  cursor: pointer;
-}
-.buttonP:hover {
-background: #B8A27A;
-color: #F3EDE2;
-border: 2px solid #F3EDE2;
-}
-
-.skip{
-  margin-top: 3vw;
-  margin-left: 30vw;
-  font-size: .7vw;
-
-  cursor: pointer;
-}
-.skip:hover{
-  color: #595959;
-}
 
 /*---------------footer--------------------*/
     .footer {
